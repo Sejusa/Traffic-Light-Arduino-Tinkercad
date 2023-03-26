@@ -1,21 +1,21 @@
 # Traffic-Light-Arduino-Tinkercad
-Construeix un semàfor amb Arduino
-Imagina que tens un problema amb un pont d'un sol carril que creua un riu. Cada setmana, un o dos accidentes ocorren a la noche, quan els conductores cansats circulen a través del pont sense detenir-se primer per veure si el camí està buidat. Has sugerido instalar semàfors però l'alcalde vol veure demostrat el projecte abans de signar la compra. Podries llogar llums temporals, però són cares. En canvi, ha decidido construir un modelo del pont amb el tràfic utilitzant LEDs i un Arduino para controlar unes llums que simulin un semàfor.
+Build a traffic light with Arduino
+Imagine you have a problem with a single lane bridge crossing a river. Every week, one or two accidents occur at night, when tired drivers drive across the bridge without first stopping to see if the road is clear. You suggested installing traffic lights but the mayor wants to see the project demonstrated before signing the purchase. You could rent temporary lights, but they are expensive. Instead, you have decided to build a model of the bridge with traffic using LEDs and an Arduino to control lights that simulate a traffic light.
 
 
-El nostre objectiu és instal·lar semàfors de tres colors en cada extrem del carril únic del pont. Les llums permeten que el tràfic flueixi només en una direcció a la vegada. Quan los sensores sitúan en qualsevol extrem del pont detectan un cotxe farà que esperi mitjançant una llum vermella. Les llums canviaran i permetran que el tràfic flueixi en l'adreça oposada.
-L'Algorisme
-Usar dos botones para simular los sensores del vehículo en cada extremo del puente. Cada joc de llums tindrà LEDs vermells, grocs i verds. Inicialment, el sistema permetrà que el tràfic flueixi d'oest a est, per la qual cosa les llums orientades a l'oest es posaran a verd i les llums de la de l'est es posaran en vermell. Quan un vehicle s'acosta al pont i que acabará prement el botó la llum és vermella, llavors el sistema encendrà la llum en el costat oposat de verd a groc i a vermell, i després haurà d'un període de temps establert per permetre que qualsevol vehículo que es trobi ja en el pont pugui acabar l'encreuament. A continuación, la llum groga cesa en ell costat del vehículo en espera parpellejarà com un avís de “preparar-se” per al conductor i finalment la llum canviarà a verd. La llum romandrà verda fins que el cotxe s'acosti a l'altre costat, moment en el qual es repeteix el procés.
-lista de componentes
+Our goal is to install three-color traffic lights at each end of the bridge's single lane. The lights allow traffic to flow in only one direction at a time. When the sensors located at either end of the bridge detect a car it will make it wait using a red light. The lights will change and allow traffic to flow in the opposite direction.
+The Algorithm
+We will use two buttons to simulate the vehicle sensors at each end of the bridge. Each set of lights will have red, yellow and green LEDs. Initially, the system will allow traffic to flow from west to east, so westbound lights will turn green and eastbound lights will turn red. When a vehicle approaches the bridge and will end up pressing the button the light is red, then the system will turn the light on the opposite side from green to yellow to red, and then have a set period of time to allow any vehicle that is already on the bridge can finish the crossing. Next, the yellow light on the side of the waiting vehicle will flash as a "get ready" warning to the driver and finally the light will change to green. The light will remain green until the car approaches the other side, at which point the process repeats.
+List of components
 
 
-Això és el que necessitaràs per crear aquest projecte:
-Dos LEDs vermells (LED1 i LED2)
-Dos LEDs Grocs (LED3 i LED4)
-Dos LEDs verdes (LED5 i LED6)
-Sis resistencias de 560 Ω (de R1 a R6)
-Resistencias debidas de 10 kΩ (R7 i R8)
-Dos condensadores de 100 nF (C1 y C2)
-Dos pulsadores (S1 y S2)
-Una placa de medición de grandària mitjana
-Un Arduino i un cable USB Diversos cables de conexión
+Here's what you'll need to create this project:
+Two red LEDs (LED1 and LED2)
+Two yellow LEDs (LED3 and LED4)
+Two green LEDs (LED5 and LED6)
+Six 560 Ω resistors (R1 to R6)
+Two 10 kΩ resistors (R7 and R8)
+Two 100 nF capacitors (C1 and C2)
+Two buttons (S1 and S2)
+A medium sized measuring plate
+An Arduino and a USB cable Several connection cables
